@@ -1,0 +1,26 @@
+{
+    "name": "fast",
+    "displayName": "fast",
+    "description": "syntax highlight for FAST language",
+    "version": "0.0.1",
+    "publisher": "SabinPop",
+    "engines": {
+        "vscode": "^1.24.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "fast",
+            "aliases": ["FAST", "fast"],
+            "extensions": [".fast",".func"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "fast",
+            "scopeName": "source.fast",
+            "path": "./syntaxes/fast.tmLanguage.json"
+        }]
+    }
+}
