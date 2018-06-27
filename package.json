@@ -1,8 +1,8 @@
 {
     "name": "fast",
-    "displayName": "fast",
-    "description": "syntax highlight for FAST language",
-    "version": "0.0.1",
+    "displayName": "FAST",
+    "description": "syntax highlighter for FAST language",
+    "version": "0.0.2",
     "publisher": "SabinPop",
     "engines": {
         "vscode": "^1.24.0"
@@ -11,16 +11,29 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "fast",
-            "aliases": ["FAST", "fast"],
-            "extensions": [".fast",".func"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "fast",
-            "scopeName": "source.fast",
-            "path": "./syntaxes/fast.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "fast",
+                "aliases": [
+                    "FAST",
+                    "fast"
+                ],
+                "extensions": [
+                    ".fast",
+                    ".func"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "fast",
+                "scopeName": "source.fast",
+                "path": "./syntaxes/fast.tmLanguage.json"
+            }
+        ]
+    },
+    "repository": {
+        "url": "https://github.com/SabinPop/fast"
     }
 }
